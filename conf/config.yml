@@ -1,0 +1,16 @@
+
+mysql:
+    debug: true  # mysql 调试开关
+    addr: 192.168.11.244:3306
+    dbName: ipcc
+    userName: root
+    password: Aa123456!@#
+
+# Redis配置
+redis:
+  addr: 192.168.11.244:6800
+  password: QyHaDrgRn@9p
+
+common:
+  loglevel: DEBUG
+  logPath : /Users/Peter/Downloads
