@@ -13,4 +13,4 @@ redis:
 
 common:
   loglevel: DEBUG
-  logPath : /Users/Peter/Downloads
+  #logPath : /Users/Peter/Downloads
