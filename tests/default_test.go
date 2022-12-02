@@ -21,7 +21,7 @@ func init() {
 
 // TestGet is a sample to run an endpoint test
 func TestGet(t *testing.T) {
-	r, _ := http.NewRequest("POST", "/v1/object", nil)
+	r, _ := http.NewRequest("POST", "/v1/electioncampaign?description=test&expire=20221203", nil)
 	w := httptest.NewRecorder()
 	beego.BeeApp.Handlers.ServeHTTP(w, r)
 
