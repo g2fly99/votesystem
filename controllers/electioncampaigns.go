@@ -17,6 +17,10 @@ const (
 	gECdetectFrequency        = 1 // minute
 )
 
+var (
+	gDetectRoutineRun = false
+)
+
 // @Title start an election campaigns
 // @Description start in an Election Campaigns
 // @Success 200 {object} response.ResponseT
@@ -54,6 +58,8 @@ func (v *VoteController) StartVote() {
 		v.Data["json"] = response.ErrCancdidateNotEnough
 		v.ServeJSON()
 	}
+
+	detectEcIsFinishedRoutine()
 
 	return
 }
@@ -276,25 +282,33 @@ func finishToSendEmail(ecId int) {
 	}
 }
 
-func DetectEcIsFinishedRoutine() {
+func detectEcIsFinishedRoutine() {
 
-	for i := 0; ; i++ {
-		ecs, err := models.ListActiveEcs(100, 100*i)
-		if err != nil {
-			logs.Error("get all candidate failed:%v", err)
-			time.Sleep(1 * time.Minute)
-		}
-
-		now := time.Now()
-		for _, ec := range ecs {
-			if now.After(ec.Expire) {
-				models.ECSetFinish(ec.EcId)
-
-				//send email to voters in background
-				go finishToSendEmail(ec.EcId)
-			}
-		}
-
-		time.Sleep(gECdetectFrequency * time.Minute)
+	if gDetectRoutineRun {
+		return
+	} else {
+		gDetectRoutineRun = true
 	}
+
+	go func() {
+		for i := 0; ; i++ {
+			ecs, err := models.ListActiveEcs(100, 100*i)
+			if err != nil {
+				logs.Error("get all candidate failed:%v", err)
+				time.Sleep(1 * time.Minute)
+			}
+
+			now := time.Now()
+			for _, ec := range ecs {
+				if now.After(ec.Expire) {
+					models.ECSetFinish(ec.EcId)
+
+					//send email to voters in background
+					go finishToSendEmail(ec.EcId)
+				}
+			}
+
+			time.Sleep(gECdetectFrequency * time.Minute)
+		}
+	}()
 }

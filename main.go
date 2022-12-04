@@ -44,5 +44,6 @@ func main() {
 	}
 
 	cache.Init(etc.RedisAddr(), etc.RedisPasswd())
+
 	beego.Run()
 }
