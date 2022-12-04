@@ -30,7 +30,11 @@ type (
 	}
 )
 
-var Conf ConfigT
+var gConf ConfigT
+
+func ConfDetail() ConfigT {
+	return gConf
+}
 
 func (this ConfigT) LogPath() string {
 	return this.Base.Logpath
@@ -54,6 +58,23 @@ func (this ConfigT) LogLevel() int {
 	}
 }
 
+func LogPath() string {
+	return gConf.Base.Logpath
+}
+
+func LogLevel() int {
+	return gConf.LogLevel()
+}
+
+func RedisAddr() string {
+
+	return gConf.Redis.ServerAddr()
+}
+
+func RedisPasswd() string {
+	return gConf.Redis.Password()
+}
+
 // 初始化配置文件
 func InitConfig(file string) error {
 
@@ -62,11 +83,11 @@ func InitConfig(file string) error {
 		return err
 	}
 
-	return yaml.Unmarshal(bs, &Conf)
+	return yaml.Unmarshal(bs, &gConf)
 }
 
 // 从nacos获取数据，初始化配置
 func InitConfigFromData(data []byte) error {
 
-	return yaml.Unmarshal(data, &Conf)
+	return yaml.Unmarshal(data, &gConf)
 }

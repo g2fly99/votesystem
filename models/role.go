@@ -50,9 +50,12 @@ func InsertNewRole(roleName, description string) (*RoleT, error) {
 	}
 
 	o := orm.NewOrm()
-	sucCount, err := o.Insert(newRole)
+
+	_, sucCount, err := o.ReadOrCreate(newRole, "RoleName")
 	if err != nil || sucCount == 0 {
+
 		logs.Error("insert role:%v failed:%v", roleName, err)
+
 		return nil, utils.ErrDbErr
 	}
 	return newRole, nil
@@ -83,7 +86,7 @@ func (this *RoleT) AddRight(right *AuthorityT) error {
 	}
 
 	o := orm.NewOrm()
-	_, err := o.Insert(newRight)
+	_, _, err := o.ReadOrCreate(newRight, "Role", "Right")
 	if err != nil {
 		logs.Error("add right for role failed:%v", err)
 		return utils.ErrDbErr

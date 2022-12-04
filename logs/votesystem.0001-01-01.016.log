@@ -1,0 +1,39 @@
+0001/01/01 00:00:00.000  [M] [log.go:205]  [HTTP] http: superfluous response.WriteHeader call from github.com/beego/beego/v2/server/web/context.(*Response).WriteHeader (context.go:230)
+2022/12/03 14:21:56.570  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 14:21:56.623  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 14:21:56.623  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 14:21:56.949  [I] [parser.go:413]  generate router from comments
+2022/12/03 14:21:56.951  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 14:21:56.951  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 14:22:03.039  [D] [vote.go:38]  get all election campaign:/v1/electioncampaign
+2022/12/03 14:22:03.044  [D] [vote.go:69]  get ecs number:2
+2022/12/03 14:22:03.071  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  31.479816ms|   match|[97;44m GET     [0m /v1/electioncampaign   r:/v1/electioncampaign/
+2022/12/03 14:23:54.763  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 14:23:54.832  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 14:23:54.832  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 14:23:55.257  [I] [parser.go:413]  generate router from comments
+2022/12/03 14:23:55.259  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 14:23:55.260  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 14:23:55.867  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 14:23:55.924  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 14:23:55.924  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 14:23:55.924  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/03 14:23:55.924  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 14:23:55.924  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 14:23:56.919  [D] [vote.go:38]  get all election campaign:/v1/electioncampaign
+2022/12/03 14:23:56.922  [D] [vote.go:69]  get ecs number:2
+2022/12/03 14:23:56.922  [C] [config.go:190]  the request url is  /v1/electioncampaign
+2022/12/03 14:23:56.922  [C] [config.go:191]  Handler crashed with error wrong object type `[]*models.CandidateT` for rows scan, need *votesystem/models.CandidateT
+2022/12/03 14:23:56.922  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/runtime/panic.go:838
+2022/12/03 14:23:56.922  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/db.go:975
+2022/12/03 14:23:56.922  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm_queryset.go:244
+2022/12/03 14:23:56.922  [C] [config.go:197]  /Users/Peter/work/code/src/votesystem/models/candidate.go:84
+2022/12/03 14:23:56.922  [C] [config.go:197]  /Users/Peter/work/code/src/votesystem/controllers/vote.go:82
+2022/12/03 14:23:56.922  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/reflect/value.go:556
+2022/12/03 14:23:56.922  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/reflect/value.go:339
+2022/12/03 14:23:56.922  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/12/03 14:23:56.922  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/12/03 14:23:56.922  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/12/03 14:23:56.922  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/net/http/server.go:2916
+2022/12/03 14:23:56.922  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/net/http/server.go:1966
+2022/12/03 14:23:56.922  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/runtime/asm_amd64.s:1571

@@ -38,17 +38,17 @@ func GetAllAuthority() (result []*AuthorityT, err error) {
 
 func NewAuthority(authorityName, description string) (*AuthorityT, error) {
 
-	newAuthority := AuthorityT{
+	newAuthority := &AuthorityT{
 		AuthorityName: authorityName,
 		Description:   description,
 	}
 
 	o := orm.NewOrm()
-	sucCount, err := o.Insert(newAuthority)
+	_, sucCount, err := o.ReadOrCreate(newAuthority, "AuthorityName")
 	if err != nil || sucCount == 0 {
 		return nil, utils.ErrDbErr
 	}
-	return &newAuthority, nil
+	return newAuthority, nil
 }
 
 func registerAuthority() {

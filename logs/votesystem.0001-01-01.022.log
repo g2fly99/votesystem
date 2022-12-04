@@ -1,0 +1,25 @@
+0001/01/01 00:00:00.000  [M] [log.go:205]  [HTTP] http: superfluous response.WriteHeader call from github.com/beego/beego/v2/server/web/context.(*Response).WriteHeader (context.go:230)
+2022/12/04 11:52:33.995  [D] [vote.go:40]  get all election campaign:/v1/electioncampaign
+2022/12/04 11:52:34.006  [D] [vote.go:71]  get ecs number:4
+2022/12/04 11:52:34.033  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  37.925085ms|   match|[97;44m GET     [0m /v1/electioncampaign   r:/v1/electioncampaign/
+2022/12/04 11:54:09.768  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 11:54:09.824  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 11:54:09.824  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 11:54:09.824  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 11:54:09.824  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 11:54:09.824  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 11:54:19.655  [C] [config.go:190]  the request url is  /v1/electioncampaign/1/condidate/1/votes/
+2022/12/04 11:54:19.655  [C] [config.go:191]  Handler crashed with error wrong object type `*[]*models.User` for rows scan, need *[]*votesystem/models.ElectionCampaignT or *[]votesystem/models.ElectionCampaignT
+2022/12/04 11:54:19.655  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/runtime/panic.go:838
+2022/12/04 11:54:19.655  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/db.go:977
+2022/12/04 11:54:19.656  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm_queryset.go:244
+2022/12/04 11:54:19.656  [C] [config.go:197]  /Users/Peter/work/code/src/votesystem/models/votes.go:78
+2022/12/04 11:54:19.656  [C] [config.go:197]  /Users/Peter/work/code/src/votesystem/controllers/candidate.go:70
+2022/12/04 11:54:19.656  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/reflect/value.go:556
+2022/12/04 11:54:19.656  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/reflect/value.go:339
+2022/12/04 11:54:19.656  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/12/04 11:54:19.656  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/12/04 11:54:19.656  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/12/04 11:54:19.656  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/net/http/server.go:2916
+2022/12/04 11:54:19.656  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/net/http/server.go:1966
+2022/12/04 11:54:19.656  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/runtime/asm_amd64.s:1571

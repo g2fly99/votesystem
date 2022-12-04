@@ -1,0 +1,762 @@
+0001/01/01 00:00:00.000  [M] [log.go:205]  [HTTP] http: superfluous response.WriteHeader call from github.com/beego/beego/v2/server/web/context.(*Response).WriteHeader (context.go:230)
+2022/12/04 11:58:28.565  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 11:58:28.683  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 11:58:28.683  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 11:58:28.684  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 11:58:28.684  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 11:58:28.684  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 11:58:55.739  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 11:58:55.910  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 11:58:55.910  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 11:58:55.911  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 11:58:55.911  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 11:58:55.912  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 11:59:24.758  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 11:59:24.823  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 11:59:24.823  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 11:59:24.823  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 11:59:24.823  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 11:59:24.823  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 11:59:27.236  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   7.407595ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes/   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:00:07.042  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:00:07.105  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:00:07.105  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:00:07.105  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 12:00:07.105  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:00:07.105  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:00:13.231  [D] [votes.go:90]  voter:&{3    <nil>}
+2022/12/04 12:00:13.231  [D] [votes.go:90]  voter:&{7    <nil>}
+2022/12/04 12:00:13.231  [D] [votes.go:90]  voter:&{1    <nil>}
+2022/12/04 12:00:13.231  [D] [votes.go:90]  voter:&{2    <nil>}
+2022/12/04 12:00:13.231  [D] [votes.go:90]  voter:&{3    <nil>}
+2022/12/04 12:00:13.231  [D] [votes.go:90]  voter:&{4    <nil>}
+2022/12/04 12:00:13.231  [D] [votes.go:90]  voter:&{5    <nil>}
+2022/12/04 12:00:13.231  [D] [votes.go:90]  voter:&{6    <nil>}
+2022/12/04 12:00:13.231  [D] [votes.go:90]  voter:&{7    <nil>}
+2022/12/04 12:00:13.231  [D] [votes.go:90]  voter:&{8    <nil>}
+2022/12/04 12:00:13.232  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   4.805366ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes/   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:05:14.803  [D] [vote.go:283]  new vote:{
+    "username": "Eric",
+    "email": "eric@test.com",
+    "IdentityNo": "F123456(8)",
+    "CandidateId": 2
+}
+2022/12/04 12:05:14.817  [D] [vote.go:372]  get voters:0
+2022/12/04 12:05:14.857  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  53.349412ms|   match|[97;46m POST    [0m /v1/electioncampaign/1/vote   r:/v1/electioncampaign/:ecId/vote
+2022/12/04 12:06:24.546  [D] [votes.go:90]  voter:&{10    <nil>}
+2022/12/04 12:06:24.547  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   4.441918ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/2/votes/   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:08:06.789  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:08:06.853  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:08:06.853  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:08:06.853  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 12:08:06.853  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:08:06.853  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:08:13.774  [D] [votes.go:91]  voter:&{10 Eric eric@test.com F123456(8) 0xc000406060}
+2022/12/04 12:08:13.774  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   4.810863ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/2/votes/   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:08:20.921  [D] [votes.go:91]  voter:&{3 Eric test3@qq.com C123456(7) 0xc0001003c0}
+2022/12/04 12:08:20.921  [D] [votes.go:91]  voter:&{7 Eric a_test3@1.cc C124456(8) 0xc000100420}
+2022/12/04 12:08:20.921  [D] [votes.go:91]  voter:&{1 BeJson test2@qq.com D987654(7) 0xc000100480}
+2022/12/04 12:08:20.921  [D] [votes.go:91]  voter:&{2 BeJson test@qq.com A123456(7) 0xc0001004e0}
+2022/12/04 12:08:20.921  [D] [votes.go:91]  voter:&{3 Eric test3@qq.com C123456(7) 0xc000100540}
+2022/12/04 12:08:20.921  [D] [votes.go:91]  voter:&{4 Eric test3@qq.com.cn F123456(7) 0xc0001005a0}
+2022/12/04 12:08:20.921  [D] [votes.go:91]  voter:&{5 Eric a_test3@qq.com C123456(8) 0xc000100600}
+2022/12/04 12:08:20.921  [D] [votes.go:91]  voter:&{6 Eric a_test3@1.com C123456(9) 0xc000100660}
+2022/12/04 12:08:20.921  [D] [votes.go:91]  voter:&{7 Eric a_test3@1.cc C124456(8) 0xc0001006c0}
+2022/12/04 12:08:20.922  [D] [votes.go:91]  voter:&{8 Eric a_test3@1.c C124456(9) 0xc000100720}
+2022/12/04 12:08:20.922  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  12.282999ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes/   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:10:18.088  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:10:18.139  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:10:18.139  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:10:18.139  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 12:10:18.139  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:10:18.139  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:10:59.030  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:10:59.127  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:10:59.127  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:10:59.867  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:10:59.948  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:10:59.948  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:11:00.381  [I] [parser.go:413]  generate router from comments
+2022/12/04 12:11:00.382  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:11:00.382  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:11:03.139  [D] [votes.go:91]  voter:&{3 Eric test3@qq.com C123456(7) 0xc0000ac180}
+2022/12/04 12:11:03.139  [D] [votes.go:91]  voter:&{7 Eric a_test3@1.cc C124456(8) 0xc0000ac1e0}
+2022/12/04 12:11:03.139  [D] [votes.go:91]  voter:&{1 BeJson test2@qq.com D987654(7) 0xc0000ac240}
+2022/12/04 12:11:03.139  [D] [votes.go:91]  voter:&{2 BeJson test@qq.com A123456(7) 0xc0000ac2a0}
+2022/12/04 12:11:03.139  [D] [votes.go:91]  voter:&{3 Eric test3@qq.com C123456(7) 0xc0000ac300}
+2022/12/04 12:11:03.139  [D] [votes.go:91]  voter:&{4 Eric test3@qq.com.cn F123456(7) 0xc0000ac360}
+2022/12/04 12:11:03.139  [D] [votes.go:91]  voter:&{5 Eric a_test3@qq.com C123456(8) 0xc0000ac3c0}
+2022/12/04 12:11:03.139  [D] [votes.go:91]  voter:&{6 Eric a_test3@1.com C123456(9) 0xc0000ac420}
+2022/12/04 12:11:03.139  [D] [votes.go:91]  voter:&{7 Eric a_test3@1.cc C124456(8) 0xc0000ac480}
+2022/12/04 12:11:03.139  [D] [votes.go:91]  voter:&{8 Eric a_test3@1.c C124456(9) 0xc0000ac4e0}
+2022/12/04 12:11:03.140  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   8.237851ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes/   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:11:35.723  [D] [votes.go:91]  voter:&{3 Eric test3@qq.com C123456(7) 0xc00020e5a0}
+2022/12/04 12:11:35.723  [D] [votes.go:91]  voter:&{7 Eric a_test3@1.cc C124456(8) 0xc00020e600}
+2022/12/04 12:11:35.723  [D] [votes.go:91]  voter:&{1 BeJson test2@qq.com D987654(7) 0xc00020e660}
+2022/12/04 12:11:35.723  [D] [votes.go:91]  voter:&{2 BeJson test@qq.com A123456(7) 0xc00020e6c0}
+2022/12/04 12:11:35.723  [D] [votes.go:91]  voter:&{3 Eric test3@qq.com C123456(7) 0xc00020e720}
+2022/12/04 12:11:35.724  [D] [votes.go:91]  voter:&{4 Eric test3@qq.com.cn F123456(7) 0xc00020e8a0}
+2022/12/04 12:11:35.724  [D] [votes.go:91]  voter:&{5 Eric a_test3@qq.com C123456(8) 0xc00020ecc0}
+2022/12/04 12:11:35.724  [D] [votes.go:91]  voter:&{6 Eric a_test3@1.com C123456(9) 0xc00020ede0}
+2022/12/04 12:11:35.724  [D] [votes.go:91]  voter:&{7 Eric a_test3@1.cc C124456(8) 0xc00020ee40}
+2022/12/04 12:11:35.724  [D] [votes.go:91]  voter:&{8 Eric a_test3@1.c C124456(9) 0xc00020eea0}
+2022/12/04 12:11:35.724  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  11.399177ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:12:10.205  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:12:10.324  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:12:10.324  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:12:10.324  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 12:12:10.324  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:12:10.324  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:12:26.994  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:12:27.063  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:12:27.063  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:12:27.431  [I] [parser.go:413]  generate router from comments
+2022/12/04 12:12:27.432  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:12:27.433  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:13:01.714  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:13:01.769  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:13:01.770  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:13:02.105  [I] [parser.go:413]  generate router from comments
+2022/12/04 12:13:02.106  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:13:02.106  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:13:04.771  [D] [candidate.go:40]  list votes:/v1/electioncampaign/1/condidate/1/votes?offset=1
+2022/12/04 12:13:04.777  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   6.025895ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:13:24.601  [D] [candidate.go:40]  list votes:/v1/electioncampaign/1/condidate/1/votes?offset=2
+2022/12/04 12:13:24.606  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   5.375184ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:13:52.435  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:13:52.498  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:13:52.498  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:13:52.827  [I] [parser.go:413]  generate router from comments
+2022/12/04 12:13:52.828  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:13:52.828  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:13:55.813  [D] [candidate.go:40]  list votes:/v1/electioncampaign/1/condidate/1/votes?offset=2
+2022/12/04 12:13:55.813  [D] [candidate.go:62]  get limit:10,offset:0
+2022/12/04 12:13:55.820  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   7.341988ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:14:17.411  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:14:17.467  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:14:17.467  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:14:17.777  [I] [parser.go:413]  generate router from comments
+2022/12/04 12:14:17.778  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:14:17.778  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:14:24.114  [D] [candidate.go:40]  list votes:/v1/electioncampaign/1/condidate/1/votes?offset=2
+2022/12/04 12:14:24.114  [D] [candidate.go:62]  get limit:10,offset:2
+2022/12/04 12:14:24.119  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   5.672489ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:14:43.546  [D] [candidate.go:40]  list votes:/v1/electioncampaign/1/condidate/1/votes?offset=2
+2022/12/04 12:14:43.546  [D] [candidate.go:62]  get limit:10,offset:2
+2022/12/04 12:14:43.551  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   5.027578ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:14:49.593  [D] [candidate.go:40]  list votes:/v1/electioncampaign/1/condidate/1/votes?offset=3
+2022/12/04 12:14:49.593  [D] [candidate.go:62]  get limit:10,offset:3
+2022/12/04 12:14:49.599  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   6.414892ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:19:02.806  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:19:02.867  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:19:02.867  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:19:02.867  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 12:19:02.867  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:19:02.867  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:19:06.509  [D] [candidate.go:40]  list votes:/v1/electioncampaign/1/condidate/1/votes?offset=3
+2022/12/04 12:19:06.510  [D] [candidate.go:62]  get limit:10,offset:3
+2022/12/04 12:19:06.517  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   7.079795ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:19:11.647  [D] [candidate.go:40]  list votes:/v1/electioncampaign/1/condidate/1/votes?offset=2
+2022/12/04 12:19:11.647  [D] [candidate.go:62]  get limit:10,offset:2
+2022/12/04 12:19:11.651  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   3.995586ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:19:15.306  [D] [candidate.go:40]  list votes:/v1/electioncampaign/1/condidate/1/votes?offset=1
+2022/12/04 12:19:15.306  [D] [candidate.go:62]  get limit:10,offset:1
+2022/12/04 12:19:15.310  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   4.455082ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:20:05.003  [D] [candidate.go:40]  list votes:/v1/electioncampaign/1/condidate/1/votes?offset=0
+2022/12/04 12:20:05.003  [D] [candidate.go:62]  get limit:10,offset:0
+2022/12/04 12:20:05.031  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  28.334747ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:20:07.322  [D] [candidate.go:40]  list votes:/v1/electioncampaign/1/condidate/1/votes?offset=1
+2022/12/04 12:20:07.322  [D] [candidate.go:62]  get limit:10,offset:1
+2022/12/04 12:20:07.327  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   4.658247ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
+2022/12/04 12:22:22.893  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:22:22.957  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:22:22.957  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:22:23.283  [I] [parser.go:413]  generate router from comments
+2022/12/04 12:22:23.284  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:22:23.284  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:23:12.353  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:23:12.405  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:23:12.405  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:23:12.726  [I] [parser.go:413]  generate router from comments
+2022/12/04 12:23:12.727  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:23:12.727  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:24:30.789  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:24:30.862  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:24:30.862  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:24:31.199  [I] [parser.go:413]  generate router from comments
+2022/12/04 12:24:31.200  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:24:31.200  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:24:55.364  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:24:55.423  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:24:55.423  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:24:55.792  [I] [parser.go:413]  generate router from comments
+2022/12/04 12:24:55.794  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:24:55.794  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:25:29.050  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:25:29.121  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:25:29.121  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:25:29.451  [I] [parser.go:413]  generate router from comments
+2022/12/04 12:25:29.451  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:25:29.451  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:25:30.380  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:25:30.453  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:25:30.453  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:25:30.453  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 12:25:30.454  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:25:30.454  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:38:56.925  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:38:57.030  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:38:57.030  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:38:57.637  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:38:57.692  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:38:57.692  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:38:57.991  [I] [parser.go:413]  generate router from comments
+2022/12/04 12:38:57.992  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:38:57.992  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:39:02.209  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:39:02.277  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:39:02.277  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:39:02.587  [I] [parser.go:413]  generate router from comments
+2022/12/04 12:39:02.587  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:39:02.587  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:39:04.840  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:39:04.893  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:39:04.893  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:39:04.893  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 12:39:04.893  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:39:04.893  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:43:45.091  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:43:45.173  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:43:45.173  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:43:45.547  [I] [parser.go:413]  generate router from comments
+2022/12/04 12:43:45.548  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:43:45.548  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:43:58.627  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:43:58.684  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:43:58.684  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:43:58.684  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 12:43:58.684  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:43:58.684  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 12:44:08.672  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 12:44:08.722  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 12:44:08.722  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 12:44:08.723  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 12:44:08.723  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 12:44:08.723  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:05:46.977  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:05:47.038  [E] [eccache.go:31]  redis connect failed:ping: dial tcp: missing address
+2022/12/04 13:05:47.044  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:05:47.044  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:05:47.044  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 13:05:47.044  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:05:47.044  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:07:45.331  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:07:45.392  [E] [eccache.go:31]  redis connect failed:ping: dial tcp: missing address
+2022/12/04 13:07:45.397  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:07:45.397  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:07:45.397  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 13:07:45.397  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:07:45.397  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:08:31.758  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:08:31.811  [D] [eccache.go:19]  get redis info :addr [] pass :
+2022/12/04 13:08:31.811  [E] [eccache.go:32]  redis connect failed:ping: dial tcp: missing address
+2022/12/04 13:08:31.816  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:08:31.816  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:08:31.818  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 13:08:31.818  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:08:31.818  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:09:18.426  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:09:18.487  [D] [eccache.go:19]  get redis info :addr [127.0.0.1:6379] pass :Aa123456!@#
+2022/12/04 13:09:18.508  [I] [eccache.go:35]  redis connect success......
+2022/12/04 13:09:18.515  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:09:18.516  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:09:18.516  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 13:09:18.516  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:09:18.516  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:09:38.288  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:09:38.364  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:09:38.370  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:09:38.370  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:09:38.370  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 13:09:38.370  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:09:38.370  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:12:34.142  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:12:34.203  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:12:34.208  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:12:34.208  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:12:34.208  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 13:12:34.208  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:12:34.208  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:17:53.592  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:17:53.653  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:17:53.658  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:17:53.658  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:17:54.031  [I] [parser.go:413]  generate router from comments
+2022/12/04 13:17:54.034  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:17:54.034  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:18:34.740  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:18:34.825  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:18:34.831  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:18:34.831  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:18:35.292  [I] [parser.go:413]  generate router from comments
+2022/12/04 13:18:35.293  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:18:35.293  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:22:13.902  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:22:13.990  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:22:13.996  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:22:13.996  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:22:14.379  [I] [parser.go:413]  generate router from comments
+2022/12/04 13:22:14.380  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:22:14.380  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:22:44.914  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:22:44.987  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:22:44.992  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:22:44.992  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:22:45.357  [I] [parser.go:413]  generate router from comments
+2022/12/04 13:22:45.358  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:22:45.358  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:23:53.295  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:23:53.355  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:23:53.359  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:23:53.359  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:23:53.360  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 13:23:53.360  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:23:53.360  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:24:49.071  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:24:49.136  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:24:49.140  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:24:49.140  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:24:49.596  [I] [parser.go:413]  generate router from comments
+2022/12/04 13:24:49.597  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:24:49.597  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:25:19.824  [D] [vote.go:161]  new vote:{
+    "username": "Eric",
+    "email": "test4@qq.com",
+    "IdentityNo": "C124456(7)",
+    "CandidateId": 2
+}
+2022/12/04 13:25:19.840  [D] [vote.go:203]  get candidate failed
+2022/12/04 13:25:19.840  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  16.009192ms|   match|[97;46m POST    [0m /v1/electioncampaign/2/vote   r:/v1/electioncampaign/:ecId/vote
+2022/12/04 13:26:22.466  [D] [vote.go:161]  new vote:{
+    "username": "Eric",
+    "email": "test4@qq.com",
+    "IdentityNo": "C124456(7)",
+    "CandidateId": 1
+}
+2022/12/04 13:26:22.475  [D] [vote.go:203]  get candidate failed
+2022/12/04 13:26:22.475  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   9.156637ms|   match|[97;46m POST    [0m /v1/electioncampaign/2/vote   r:/v1/electioncampaign/:ecId/vote
+2022/12/04 13:28:32.053  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:28:32.294  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:28:32.299  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:28:32.299  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:28:32.711  [I] [parser.go:413]  generate router from comments
+2022/12/04 13:28:32.712  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:28:32.712  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:28:33.167  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:28:33.281  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:28:33.290  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:28:33.290  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:28:33.290  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 13:28:33.290  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:28:33.290  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:28:45.233  [D] [vote.go:162]  new vote:{
+    "username": "Eric",
+    "email": "test4@qq.com",
+    "IdentityNo": "C124456(7)",
+    "CandidateId": 1
+}
+2022/12/04 13:28:45.287  [D] [vote.go:254]  get voters:0
+2022/12/04 13:28:45.327  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|    94.0179ms|   match|[97;46m POST    [0m /v1/electioncampaign/1/vote   r:/v1/electioncampaign/:ecId/vote
+2022/12/04 13:29:32.133  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:29:32.264  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:29:32.272  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:29:32.272  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:29:32.603  [I] [parser.go:413]  generate router from comments
+2022/12/04 13:29:32.604  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:29:32.604  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:30:24.279  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:30:24.378  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:30:24.386  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:30:24.386  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:30:24.776  [I] [parser.go:413]  generate router from comments
+2022/12/04 13:30:24.776  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:30:24.776  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:30:30.373  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:30:30.463  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:30:30.470  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:30:30.470  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:30:30.792  [I] [parser.go:413]  generate router from comments
+2022/12/04 13:30:30.792  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:30:30.792  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:30:33.238  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:30:33.305  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:30:33.309  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:30:33.309  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:30:33.309  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 13:30:33.309  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:30:33.309  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:30:39.165  [D] [vote.go:162]  new vote:{
+    "username": "Eric",
+    "email": "test4@qq.com",
+    "IdentityNo": "C124456(7)",
+    "CandidateId": 1
+}
+2022/12/04 13:30:39.187  [D] [vote.go:255]  get voters:1
+2022/12/04 13:30:39.203  [I] [vote.go:298]  user [C124456(7)] have voted in this ec [1]
+2022/12/04 13:30:39.208  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  43.410723ms|   match|[97;46m POST    [0m /v1/electioncampaign/1/vote   r:/v1/electioncampaign/:ecId/vote
+2022/12/04 13:30:59.871  [D] [vote.go:162]  new vote:{
+    "username": "Eric",
+    "email": "test5@qq.com",
+    "IdentityNo": "D124456(7)",
+    "CandidateId": 2
+}
+2022/12/04 13:30:59.888  [D] [vote.go:255]  get voters:0
+2022/12/04 13:30:59.968  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  97.344654ms|   match|[97;46m POST    [0m /v1/electioncampaign/1/vote   r:/v1/electioncampaign/:ecId/vote
+2022/12/04 13:31:18.817  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:31:18.882  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:31:18.887  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:31:18.887  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:31:19.201  [I] [parser.go:413]  generate router from comments
+2022/12/04 13:31:19.201  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:31:19.201  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:31:40.520  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:31:40.717  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:31:40.723  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:31:40.724  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:31:41.135  [I] [parser.go:413]  generate router from comments
+2022/12/04 13:31:41.136  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:31:41.136  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:31:45.539  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:31:45.618  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:31:45.622  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:31:45.623  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:31:45.623  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 13:31:45.623  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:31:45.623  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:31:56.440  [D] [vote.go:162]  new vote:{
+    "username": "Eric6",
+    "email": "test6@qq.com",
+    "IdentityNo": "D124457(7)",
+    "CandidateId": 2
+}
+2022/12/04 13:31:56.456  [D] [vote.go:255]  get voters:0
+2022/12/04 13:31:56.498  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  58.570318ms|   match|[97;46m POST    [0m /v1/electioncampaign/1/vote   r:/v1/electioncampaign/:ecId/vote
+2022/12/04 13:34:04.323  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:34:04.383  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:34:04.388  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:34:04.388  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:34:04.692  [I] [parser.go:413]  generate router from comments
+2022/12/04 13:34:04.693  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:34:04.693  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:34:32.066  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    767.573µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2022/12/04 13:36:22.975  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:36:23.081  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:36:23.090  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:36:23.091  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:36:23.474  [I] [parser.go:413]  generate router from comments
+2022/12/04 13:36:23.475  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:36:23.475  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:36:24.600  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:36:24.678  [I] [eccache.go:34]  redis connect success......
+2022/12/04 13:36:24.683  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:36:24.683  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:36:24.684  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 13:36:24.684  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:36:24.684  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:38:58.077  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:38:58.153  [I] [eccache.go:35]  redis connect success......
+2022/12/04 13:38:58.159  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:38:58.159  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:38:58.159  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 13:38:58.159  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:38:58.159  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 13:59:53.107  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 13:59:53.189  [I] [eccache.go:36]  redis connect success......
+2022/12/04 13:59:53.195  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 13:59:53.195  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 13:59:53.195  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 13:59:53.195  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 13:59:53.195  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:00:14.423  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:00:14.522  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:00:14.528  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:00:14.528  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:00:14.528  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 14:00:14.528  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:00:14.528  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:03:13.889  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:03:13.949  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:03:13.953  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:03:13.953  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:03:13.953  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 14:03:13.953  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:03:13.953  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:05:19.802  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:05:19.858  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:05:19.863  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:05:19.863  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:05:20.204  [I] [parser.go:413]  generate router from comments
+2022/12/04 14:05:20.205  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:05:20.205  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:05:32.823  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:05:32.902  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:05:32.906  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:05:32.907  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:05:33.361  [I] [parser.go:413]  generate router from comments
+2022/12/04 14:05:33.361  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:05:33.361  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:08:26.323  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:08:26.427  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:08:26.432  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:08:26.432  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:08:26.887  [I] [parser.go:413]  generate router from comments
+2022/12/04 14:08:26.889  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:08:26.889  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:08:27.782  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:08:27.859  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:08:27.866  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:08:27.866  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:08:27.866  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 14:08:27.866  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:08:27.866  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:19:08.064  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:19:08.182  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:19:08.192  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:19:08.192  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:19:08.518  [I] [parser.go:413]  generate router from comments
+2022/12/04 14:19:08.519  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:19:08.519  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:19:47.020  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:19:47.098  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:19:47.103  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:19:47.103  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:19:47.435  [I] [parser.go:413]  generate router from comments
+2022/12/04 14:19:47.436  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:19:47.436  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:19:48.320  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:19:48.425  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:19:48.430  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:19:48.430  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:19:48.430  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 14:19:48.430  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:19:48.430  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:32:28.275  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:32:28.334  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:32:28.339  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:32:28.340  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:32:28.668  [I] [parser.go:413]  generate router from comments
+2022/12/04 14:32:28.670  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:32:28.670  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:33:37.760  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:33:37.870  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:33:37.879  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:33:37.879  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:33:38.208  [I] [parser.go:413]  generate router from comments
+2022/12/04 14:33:38.208  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:33:38.208  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:34:54.602  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:34:54.753  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:34:54.766  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:34:54.766  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:34:55.790  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:34:56.003  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:34:56.013  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:34:56.014  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:34:56.414  [I] [parser.go:413]  generate router from comments
+2022/12/04 14:34:56.415  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:34:56.415  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:38:17.767  [D] [vote.go:51]  ec is not start [ 2 ]
+2022/12/04 14:38:17.768  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   6.923296ms|   match|[97;46m POST    [0m /v1/electioncampaign/2/candidate   r:/v1/electioncampaign/:ecId/candidate
+2022/12/04 14:39:10.804  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:39:10.895  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:39:10.901  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:39:10.901  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:39:11.313  [I] [parser.go:413]  generate router from comments
+2022/12/04 14:39:11.314  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:39:11.314  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:39:12.409  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:39:12.509  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:39:12.518  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:39:12.518  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:39:12.518  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 14:39:12.518  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:39:12.518  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:39:15.523  [D] [vote.go:100]  add candidate:[{0 test2 1 18 2 just for test2 {0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC}}]
+2022/12/04 14:39:15.540  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  22.609791ms|   match|[97;46m POST    [0m /v1/electioncampaign/2/candidate   r:/v1/electioncampaign/:ecId/candidate
+2022/12/04 14:40:15.835  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   4.325015ms|   match|[97;43m PUT     [0m /v1/electioncampaign/2/start   r:/v1/electioncampaign/:ecId/start
+2022/12/04 14:41:23.287  [D] [vote.go:100]  add candidate:[{0 test3 0 19 2 just for test4 {0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC}}]
+2022/12/04 14:41:23.306  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  22.106452ms|   match|[97;46m POST    [0m /v1/electioncampaign/2/candidate   r:/v1/electioncampaign/:ecId/candidate
+2022/12/04 14:41:27.345  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  21.202311ms|   match|[97;43m PUT     [0m /v1/electioncampaign/2/start   r:/v1/electioncampaign/:ecId/start
+2022/12/04 14:44:15.647  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:44:15.710  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:44:15.715  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:44:15.715  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:44:15.715  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 14:44:15.715  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:44:15.715  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:44:32.945  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    858.528µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2022/12/04 14:44:59.991  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:45:00.063  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:45:00.068  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:45:00.068  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:45:00.387  [I] [parser.go:413]  generate router from comments
+2022/12/04 14:45:00.388  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:45:00.388  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 14:58:45.367  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 14:58:45.441  [I] [eccache.go:36]  redis connect success......
+2022/12/04 14:58:45.446  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 14:58:45.446  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 14:58:45.772  [I] [parser.go:413]  generate router from comments
+2022/12/04 14:58:45.773  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 14:58:45.773  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:03:58.399  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:03:58.567  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:03:58.577  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:03:58.578  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:03:59.071  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:03:59.072  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:03:59.072  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:04:00.400  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:04:00.471  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:04:00.476  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:04:00.476  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:04:00.476  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 15:04:00.476  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:04:00.476  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:04:40.920  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:04:40.986  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:04:40.991  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:04:40.991  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:04:41.360  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:04:41.361  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:04:41.361  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:05:41.164  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:05:41.289  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:05:41.295  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:05:41.295  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:05:43.136  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:05:43.292  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:05:43.297  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:05:43.297  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:05:43.724  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:05:43.725  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:05:43.725  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:05:54.159  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:05:54.234  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:05:54.242  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 15:05:54.242  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:05:54.243  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:05:54.243  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:05:54.243  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:05:55.197  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:05:55.275  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:05:55.281  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:05:55.281  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:05:55.281  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 15:05:55.281  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:05:55.282  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:06:57.751  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:06:57.913  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:06:57.920  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:06:57.920  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:06:57.921  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 15:06:57.922  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:06:57.922  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:06:58.557  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:06:58.644  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:06:58.650  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:06:58.650  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:06:58.650  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/04 15:06:58.650  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:06:58.650  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:07:26.524  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:07:26.611  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:07:26.617  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:07:26.617  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:07:27.047  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:07:27.050  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:07:27.050  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:09:23.714  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:09:23.777  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:09:23.781  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:09:23.782  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:09:24.187  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:09:24.188  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:09:24.188  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:10:11.208  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:10:11.428  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:10:11.443  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:10:11.443  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:10:11.954  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:10:11.955  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:10:11.955  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:10:49.348  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:10:49.414  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:10:49.419  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:10:49.419  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:10:49.763  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:10:49.764  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:10:49.764  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:12:34.134  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:12:34.195  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:12:34.199  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:12:34.199  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:12:34.514  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:12:34.514  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:12:34.514  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:13:07.934  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:13:08.044  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:13:08.053  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:13:08.054  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:13:08.503  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:13:08.504  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:13:08.504  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:13:20.622  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:13:20.679  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:13:20.683  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:13:20.683  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:13:21.078  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:13:21.078  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:13:21.079  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:13:36.587  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:13:36.652  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:13:36.656  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:13:36.656  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:13:36.975  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:13:36.976  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:13:36.976  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:13:50.631  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:13:50.701  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:13:50.705  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:13:50.706  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:13:51.103  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:13:51.104  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:13:51.104  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:13:55.753  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:13:55.811  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:13:55.816  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:13:55.816  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:13:56.246  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:13:56.248  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:13:56.248  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:15:06.757  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:15:06.836  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:15:06.841  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:15:06.841  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:15:07.215  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:15:07.216  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:15:07.216  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:15:53.971  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:15:54.042  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:15:54.047  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:15:54.047  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:15:54.373  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:15:54.373  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:15:54.373  [I] [server.go:241]  http server Running on http://:8089
+2022/12/04 15:16:27.629  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/04 15:16:27.693  [I] [eccache.go:36]  redis connect success......
+2022/12/04 15:16:27.699  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/04 15:16:27.699  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/04 15:16:28.008  [I] [parser.go:413]  generate router from comments
+2022/12/04 15:16:28.009  [I] [server.go:241]  http server Running on http://:8080
+2022/12/04 15:16:28.009  [I] [server.go:241]  http server Running on http://:8089

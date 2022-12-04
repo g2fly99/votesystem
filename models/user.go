@@ -1,6 +1,7 @@
 package models
 
 import (
+	"strings"
 	"votesystem/utils"
 
 	"github.com/beego/beego/v2/client/orm"
@@ -12,7 +13,7 @@ type User struct {
 	Username   string `orm:"null"`
 	Email      string
 	IdentityNo string
-	Role       *RoleT `orm:"null;rel(one);on_delete(set_null)"`
+	Role       *RoleT `orm:"null;rel(fk);on_delete(set_null)"`
 }
 
 func (this *User) TableName() string {
@@ -25,12 +26,31 @@ func (this *User) TableUnique() [][]string {
 	}
 }
 
-func AddNormalUser(name, email, identityNo string) error {
+func GetNormalUser(idNo, email string) ([]*User, error) {
+
+	u := []*User{}
+
+	cond := orm.NewCondition()
+	emailCondition := cond.Or("Email", email)
+	iddentCondition := cond.Or("IdentityNo", idNo).OrCond(emailCondition)
+
+	o := orm.NewOrm()
+	qs := o.QueryTable(&User{})
+
+	_, err := qs.SetCond(iddentCondition).All(&u)
+	if err != nil {
+		logs.Error("select user from db failed:%v,id[%v],email[%v]", err, idNo, email)
+		return nil, utils.ErrDbErr
+	}
+	return u, nil
+}
+
+func AddNormalUser(name, identityNo, email string) (*User, error) {
 
 	role, err := GetRole(RoleNormal)
 	if err != nil {
 		logs.Error("get normal role failed:%v", err)
-		return utils.ErrDbErr
+		return nil, utils.ErrDbErr
 	}
 
 	newUser := &User{
@@ -41,18 +61,18 @@ func AddNormalUser(name, email, identityNo string) error {
 	}
 
 	o := orm.NewOrm()
-	_, err = o.Insert(newUser)
+	Id, err := o.Insert(newUser)
 	if err != nil {
-		logs.Error("add normal user failed:%v", err)
-		return utils.ErrDbErr
+		if strings.Contains(err.Error(), "Duplicate") {
+			return nil, utils.ErrExist
+		} else {
+			logs.Error("add normal user failed:%v", err)
+			return nil, utils.ErrDbErr
+		}
 	}
 
-	return nil
-}
-
-func GetUser(uid int) (u *User, err error) {
-
-	return nil, utils.ErrNotExist
+	newUser.UserId = int(Id)
+	return newUser, nil
 }
 
 func registerUser() {

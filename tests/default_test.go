@@ -1,6 +1,7 @@
 package test
 
 import (
+	"fmt"
 	"net/http"
 	"net/http/httptest"
 	"path/filepath"
@@ -15,17 +16,22 @@ import (
 
 func init() {
 	_, file, _, _ := runtime.Caller(0)
+	fmt.Printf("file:%v\n", file)
 	apppath, _ := filepath.Abs(filepath.Dir(filepath.Join(file, ".."+string(filepath.Separator))))
+
+	fmt.Printf("app path:%v\n", apppath)
 	beego.TestBeegoInit(apppath)
 }
 
 // TestGet is a sample to run an endpoint test
 func TestGet(t *testing.T) {
-	r, _ := http.NewRequest("POST", "/v1/electioncampaign?description=test&expire=20221203", nil)
+	r, _ := http.NewRequest("GET", "/v1/electioncampaign?description=test&expire=20221203", nil)
 	w := httptest.NewRecorder()
 	beego.BeeApp.Handlers.ServeHTTP(w, r)
 
-	logs.Info("testing", "TestAddEC", "Code[%d]\n%s", w.Code, w.Body.String())
+	if w.Code == 200 {
+		logs.Info("testing", "TestAddEC", "Code[%d]\n %s", w.Code, w.Body.String())
+	}
 
 	Convey("Subject: Test Station Endpoint\n", t, func() {
 		Convey("Status Code Should Be 200", func() {

@@ -16,6 +16,7 @@ type TimeModel struct {
 }
 
 func registerAllModels() {
+	registerCondidate()
 	registerAuthority()
 	registerVotes()
 	registerRole()
@@ -25,7 +26,7 @@ func registerAllModels() {
 // 初始化mysql
 func InitMysql(config etc.ConfigT) error {
 
-	orm.Debug = config.Mysql.Debug()
+	orm.Debug = config.Mysql.Debug
 
 	registerAllModels()
 
@@ -37,9 +38,10 @@ func InitMysql(config etc.ConfigT) error {
 
 	alias := "default"
 	auth := fmt.Sprintf(
-		"%s:%s@tcp(%s)/%s?charset=utf8mb4&loc=Local",
-		config.Mysql.Debug(), config.Mysql.Password(), config.Mysql.ServerAddr(), config.Mysql.Debug())
+		"%s:%s@tcp(%s)/%s?charset=utf8&loc=Local",
+		config.Mysql.UserName, config.Mysql.Password, config.Mysql.IpAddr, config.Mysql.DbName)
 
+	logs.Debug(auth)
 	err = orm.RegisterDataBase(alias, "mysql", auth)
 	if err != nil {
 		logs.Error("register dataBase failed:%v,auth:%v", err, auth)

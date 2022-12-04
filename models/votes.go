@@ -55,27 +55,69 @@ func CountVotes(ecId, candidateId int) (int, error) {
 	return int(num), nil
 }
 
-func ListAllVote(ecId, candidateId, limit, offset int) ([]*User, error) {
-
-	res := make([]*User, 10)
+func GetVoteWithUser(ecId, userId int) (int, error) {
 
 	o := orm.NewOrm()
 	count, err := o.QueryTable(new(VoteT)).
 		Filter("Ec", ecId).
-		Filter("Candidate", candidateId).
-		Limit(limit, offset).
-		All(res)
-
+		Filter("Voter", userId).
+		Count()
 	if err != nil {
-		logs.Error("add new vote failed:%v", err)
-		return nil, utils.ErrDbErr
+		logs.Error("get vote user failed:%v", err)
+		return 0, utils.ErrDbErr
 	}
+	return int(count), nil
+}
 
-	if count == 0 {
+func ListAllVote(ecId, candidateId, limit, offset int) ([]*User, error) {
+
+	o := orm.NewOrm()
+	result := make([]*VoteT, limit)
+	count, err := o.QueryTable(new(VoteT)).
+		Filter("Ec", ecId).
+		Filter("Candidate", candidateId).
+		Limit(limit, offset*limit).
+		RelatedSel("Voter").
+		All(&result)
+	if err != nil {
+		logs.Error("query from db failed:%v", err)
+		return nil, utils.ErrDbErr
+	} else if count == 0 {
 		return nil, utils.ErrEmpty
 	}
 
-	return res, nil
+	users := make([]*User, 0)
+	for _, v := range result {
+		//logs.Debug("voter:%v", v.Voter)
+		users = append(users, v.Voter)
+	}
+
+	return users, nil
+}
+
+func ListAllEcVoters(ecId, limit, offset int) ([]*User, error) {
+
+	o := orm.NewOrm()
+	result := make([]*VoteT, limit)
+	count, err := o.QueryTable(new(VoteT)).
+		Filter("Ec", ecId).
+		Limit(limit, offset*limit).
+		RelatedSel("Voter").
+		All(&result)
+	if err != nil {
+		logs.Error("query from db failed:%v", err)
+		return nil, utils.ErrDbErr
+	} else if count == 0 {
+		return nil, utils.ErrEmpty
+	}
+
+	users := make([]*User, 0)
+	for _, v := range result {
+		//logs.Debug("voter:%v", v.Voter)
+		users = append(users, v.Voter)
+	}
+
+	return users, nil
 }
 
 type ElectionCampaignT struct {
@@ -109,6 +151,39 @@ func CreateNewEC(expire time.Time, description string) (*ElectionCampaignT, erro
 	return newEc, nil
 }
 
+func ECStart(ecId int) error {
+
+	newEc := &ElectionCampaignT{
+		EcId:      ecId,
+		StartTime: time.Now(),
+	}
+
+	o := orm.NewOrm()
+	_, err := o.Update(newEc, "StartTime")
+	if err != nil {
+		return utils.ErrDbErr
+	}
+
+	return nil
+}
+
+func ECSetFinish(ecId int) error {
+
+	newEc := &ElectionCampaignT{
+		EcId:       ecId,
+		FinishTime: time.Now(),
+		Finished:   true,
+	}
+
+	o := orm.NewOrm()
+	_, err := o.Update(newEc, "FinishTime", "Finished")
+	if err != nil {
+		return utils.ErrDbErr
+	}
+
+	return nil
+}
+
 func GetEcInfo(ecId int) (*ElectionCampaignT, error) {
 
 	newEc := &ElectionCampaignT{
@@ -129,7 +204,9 @@ func ListEcs(size, offset int) ([]*ElectionCampaignT, error) {
 
 	o := orm.NewOrm()
 	result := make([]*ElectionCampaignT, size)
-	count, err := o.QueryTable(new(ElectionCampaignT)).Limit(size, offset).All(&result)
+	count, err := o.QueryTable(new(ElectionCampaignT)).
+		Limit(size, offset).
+		All(&result)
 	if err != nil {
 		logs.Error("query from db failed:%v", err)
 		return nil, errors.New("dberr")
@@ -140,37 +217,22 @@ func ListEcs(size, offset int) ([]*ElectionCampaignT, error) {
 	return result, nil
 }
 
-func EcStart(ecId int) error {
-
-	newEc := &ElectionCampaignT{
-		EcId:      ecId,
-		StartTime: time.Now(),
-	}
+func ListActiveEcs(size, offset int) ([]*ElectionCampaignT, error) {
 
 	o := orm.NewOrm()
-	_, err := o.Update(newEc, "StartTime")
+	result := make([]*ElectionCampaignT, size)
+	count, err := o.QueryTable(new(ElectionCampaignT)).
+		Filter("Finished", false).
+		Limit(size, offset).
+		All(&result)
 	if err != nil {
-		logs.Error("start ec[%v] failed:%v", ecId, err)
-		return utils.ErrDbErr
-	}
-	return nil
-}
-
-func EndEc(ecId int) error {
-
-	newEc := &ElectionCampaignT{
-		EcId:       ecId,
-		Finished:   true,
-		FinishTime: time.Now(),
+		logs.Error("query from db failed:%v", err)
+		return nil, errors.New("dberr")
+	} else if count == 0 {
+		return nil, utils.ErrDbErr
 	}
 
-	o := orm.NewOrm()
-	_, err := o.Update(newEc, "Finished", "FinishTime")
-	if err != nil {
-		logs.Error("end ec[%v] failed:%v", ecId, err)
-		return utils.ErrDbErr
-	}
-	return nil
+	return result, nil
 }
 
 func registerVotes() {

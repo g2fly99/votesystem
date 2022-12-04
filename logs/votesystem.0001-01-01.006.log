@@ -1,0 +1,148 @@
+0001/01/01 00:00:00.000  [M] [log.go:205]  [HTTP] http: superfluous response.WriteHeader call from github.com/beego/beego/v2/server/web/context.(*Response).WriteHeader (context.go:230)
+2022/12/03 13:23:30.508  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:23:30.566  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:23:30.566  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:23:30.566  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/03 13:23:30.566  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:23:30.566  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:23:32.529  [D] [vote.go:38]  get all election campaign:/v1/electioncampaign
+2022/12/03 13:23:32.532  [D] [vote.go:69]  get ecs number:1
+2022/12/03 13:23:32.545  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  15.783147ms|   match|[97;44m GET     [0m /v1/electioncampaign   r:/v1/electioncampaign/
+2022/12/03 13:27:33.709  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:27:33.801  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:27:33.801  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:27:33.801  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/03 13:27:33.801  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:27:33.801  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:27:35.297  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:27:35.378  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:27:35.378  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:27:35.378  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/03 13:27:35.378  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:27:35.378  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:27:48.890  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:27:48.941  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:27:48.941  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:27:48.941  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/03 13:27:48.942  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:27:48.942  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:27:51.345  [D] [vote.go:38]  get all election campaign:/v1/electioncampaign
+2022/12/03 13:27:51.350  [D] [vote.go:69]  get ecs number:1
+2022/12/03 13:27:51.353  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   8.249125ms|   match|[97;44m GET     [0m /v1/electioncampaign   r:/v1/electioncampaign/
+2022/12/03 13:28:10.783  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:28:10.842  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:28:10.842  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:28:10.842  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/03 13:28:10.842  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:28:10.842  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:31:41.115  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:31:41.178  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:31:41.178  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:31:41.531  [I] [parser.go:413]  generate router from comments
+2022/12/03 13:31:41.534  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:31:41.534  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:33:35.581  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:33:35.943  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:33:35.943  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:33:36.409  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:33:36.479  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:33:36.479  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:33:36.819  [I] [parser.go:413]  generate router from comments
+2022/12/03 13:33:36.820  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:33:36.820  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:35:06.526  [D] [router.go:955]  |      127.0.0.1|[97;43m 404 [0m|    321.371µs| nomatch|[97;46m POST    [0m /v1/electioncampaign/1/candidate
+2022/12/03 13:36:37.502  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:36:37.601  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:36:37.602  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:36:38.003  [I] [parser.go:413]  generate router from comments
+2022/12/03 13:36:38.004  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:36:38.004  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:36:48.090  [D] [router.go:955]  |      127.0.0.1|[97;43m 404 [0m|    417.003µs| nomatch|[97;46m POST    [0m /v1/electioncampaign/1/candidate
+2022/12/03 13:36:55.877  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    504.554µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2022/12/03 13:37:14.875  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:37:14.928  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:37:14.928  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:37:15.259  [I] [parser.go:413]  generate router from comments
+2022/12/03 13:37:15.260  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:37:15.260  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:37:28.750  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    624.176µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2022/12/03 13:37:33.848  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    482.604µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2022/12/03 13:37:43.512  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:37:43.580  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:37:43.580  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:37:43.580  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/03 13:37:43.580  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:37:43.580  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:37:47.041  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    854.303µs|   match|[97;44m GET     [0m /qps   r:/qps
+2022/12/03 13:37:49.052  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    569.568µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2022/12/03 13:37:50.871  [D] [router.go:955]  |            ::1|[97;42m 200 [0m|    606.287µs|   match|[97;44m GET     [0m /listconf   r:/listconf
+2022/12/03 13:38:00.575  [E] [vote.go:180]  json decode:invalid character ']' looking for beginning of value
+2022/12/03 13:38:00.576  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|      261.4µs|   match|[97;46m POST    [0m /v1/electioncampaign/1/candidate   r:/v1/electioncampaign/:ecId/candidate
+2022/12/03 13:42:21.969  [E] [vote.go:180]  json decode:json: cannot unmarshal array into Go value of type controllers.CandidateAddParamT
+2022/12/03 13:42:21.972  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|    2.62181ms|   match|[97;46m POST    [0m /v1/electioncampaign/1/candidate   r:/v1/electioncampaign/:ecId/candidate
+2022/12/03 13:43:15.154  [E] [vote.go:180]  json decode:json: cannot unmarshal string into Go struct field CandidateT.candidate.candidateId of type int
+2022/12/03 13:43:15.159  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   5.550607ms|   match|[97;46m POST    [0m /v1/electioncampaign/1/candidate   r:/v1/electioncampaign/:ecId/candidate
+2022/12/03 13:43:29.715  [E] [vote.go:180]  json decode:json: cannot unmarshal string into Go struct field CandidateT.candidate.sex of type int
+2022/12/03 13:43:29.716  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|    516.351µs|   match|[97;46m POST    [0m /v1/electioncampaign/1/candidate   r:/v1/electioncampaign/:ecId/candidate
+2022/12/03 13:43:44.505  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   25.86204ms|   match|[97;46m POST    [0m /v1/electioncampaign/1/candidate   r:/v1/electioncampaign/:ecId/candidate
+2022/12/03 13:43:54.879  [D] [vote.go:38]  get all election campaign:/v1/electioncampaign
+2022/12/03 13:43:54.882  [D] [vote.go:69]  get ecs number:1
+2022/12/03 13:43:54.887  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   7.697016ms|   match|[97;44m GET     [0m /v1/electioncampaign   r:/v1/electioncampaign/
+2022/12/03 13:47:04.362  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:47:04.433  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:47:04.433  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:47:04.853  [I] [parser.go:413]  generate router from comments
+2022/12/03 13:47:04.855  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:47:04.856  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:47:05.545  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:47:05.618  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:47:05.618  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:47:05.618  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/03 13:47:05.618  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:47:05.618  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:47:18.013  [D] [vote.go:220]  add candidate:[{0 eric 0 18 0xc000294140 just for test {0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC}}]
+2022/12/03 13:47:18.024  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  18.726454ms|   match|[97;46m POST    [0m /v1/electioncampaign/1/candidate   r:/v1/electioncampaign/:ecId/candidate
+2022/12/03 13:47:51.270  [D] [vote.go:220]  add candidate:[{0 eric 0 18 0xc0001805a0 just for test {0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC}} {0 eric2 0 19 0xc0001805a0 just for test {0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC}} {0 eric3 0 20 0xc0001805a0 just for test {0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC}}]
+2022/12/03 13:47:51.303  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  37.325333ms|   match|[97;46m POST    [0m /v1/electioncampaign/1/candidate   r:/v1/electioncampaign/:ecId/candidate
+2022/12/03 13:50:02.257  [D] [vote.go:38]  get all election campaign:/v1/electioncampaign
+2022/12/03 13:50:02.260  [D] [vote.go:69]  get ecs number:1
+2022/12/03 13:50:02.265  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|   8.231406ms|   match|[97;44m GET     [0m /v1/electioncampaign   r:/v1/electioncampaign/
+2022/12/03 13:51:00.977  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:51:01.044  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:51:01.044  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:51:01.409  [I] [parser.go:413]  generate router from comments
+2022/12/03 13:51:01.410  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:51:01.410  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:52:30.258  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:52:30.326  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:52:30.326  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:52:30.328  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/03 13:52:30.328  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:52:30.328  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:52:34.499  [D] [vote.go:38]  get all election campaign:/v1/electioncampaign
+2022/12/03 13:52:34.503  [D] [vote.go:69]  get ecs number:1
+2022/12/03 13:52:34.509  [D] [candidate.go:72]  get result :&{1 http://www.bejson.com 0 16 0xc00011c280 just for test {2022-12-03 13:43:44 +0800 CST 2022-12-03 13:43:44 +0800 CST}}
+2022/12/03 13:52:34.509  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m|  10.144717ms|   match|[97;44m GET     [0m /v1/electioncampaign   r:/v1/electioncampaign/
+2022/12/03 13:54:58.179  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/03 13:54:58.241  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/03 13:54:58.241  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/03 13:54:58.242  [I] [parser.go:85]  /Users/Peter/work/code/src/votesystem/controllers no changed
+2022/12/03 13:54:58.242  [I] [server.go:241]  http server Running on http://:8080
+2022/12/03 13:54:58.242  [I] [server.go:241]  http server Running on http://:8089
+2022/12/03 13:55:01.566  [D] [vote.go:38]  get all election campaign:/v1/electioncampaign
+2022/12/03 13:55:01.571  [D] [vote.go:69]  get ecs number:1
+2022/12/03 13:55:01.571  [C] [config.go:190]  the request url is  /v1/electioncampaign
+2022/12/03 13:55:01.571  [C] [config.go:191]  Handler crashed with error wrong object type `[]*models.CandidateT` for rows scan, need *votesystem/models.CandidateT
+2022/12/03 13:55:01.571  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/runtime/panic.go:838
+2022/12/03 13:55:01.571  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/db.go:975
+2022/12/03 13:55:01.571  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm_queryset.go:244
+2022/12/03 13:55:01.572  [C] [config.go:197]  /Users/Peter/work/code/src/votesystem/models/candidate.go:66
+2022/12/03 13:55:01.572  [C] [config.go:197]  /Users/Peter/work/code/src/votesystem/controllers/vote.go:82
+2022/12/03 13:55:01.572  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/reflect/value.go:556
+2022/12/03 13:55:01.572  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/reflect/value.go:339
+2022/12/03 13:55:01.572  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/12/03 13:55:01.572  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/12/03 13:55:01.572  [C] [config.go:197]  /Users/Peter/work/code/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/12/03 13:55:01.572  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/net/http/server.go:2916
+2022/12/03 13:55:01.572  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/net/http/server.go:1966
+2022/12/03 13:55:01.572  [C] [config.go:197]  /usr/local/Cellar/go@1.18/1.18.7/libexec/src/runtime/asm_amd64.s:1571

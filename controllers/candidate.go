@@ -13,7 +13,7 @@ type CandidateT struct {
 	CandidateId int `json:"candidateId"`
 	EcId        string
 	Name        string `json:"name"`
-	Sexy        int    `json:"sexy"`
+	Sex         int    `json:"sex"`
 	Age         int    `json:"age"`
 	Description string `json:"description"`
 	VoteNumber  int    `json:"voteNumber"`
@@ -25,17 +25,19 @@ type CondidateController struct {
 }
 
 type VoteUserT struct {
-	Username   string `json:"username"`
-	Email      string `json:"email"`
-	IdentityNo string `json:"identityNo"`
+	Username    string `json:"username"`
+	Email       string `json:"email"`
+	IdentityNo  string `json:"identityNo"`
+	CandidateId int    `json:"candidateId"`
 }
 
 // @Title Get candidate's votes
 // @Description get all Election Campaigns
 // @Success 200 {object} VoteUserT
-// @router /:condidateId/votes/ [get]
-func (c *CondidateController) GetVoters() {
+// @router /:ecId/condidate/:condidateId/votes/ [get]
+func (c *VoteController) GetVoters() {
 
+	logs.Debug("list votes:%v", c.Ctx.Input.URI())
 	condidateIdArg := c.Ctx.Input.Param(":condidateId")
 	condidateId, err := strconv.Atoi(condidateIdArg)
 	if err != nil {
@@ -45,7 +47,8 @@ func (c *CondidateController) GetVoters() {
 		return
 	}
 
-	ecId, err := c.GetInt("ecId", 0)
+	ec := c.Ctx.Input.Param(":ecId")
+	ecId, err := strconv.Atoi(ec)
 	if err != nil {
 		logs.Error("ecId decode:%v", err)
 		c.Data["json"] = response.ErrParamHandler(err.Error())
@@ -53,25 +56,19 @@ func (c *CondidateController) GetVoters() {
 		return
 	}
 
-	/*ec, err := models.GetEcInfo(ecId)
-	if err != nil {
-		logs.Error("get info from db failed:%v", err)
-		c.Data["json"] = response.ErrSystem
-		c.ServeJSON()
-		return
-	}*/
+	offset, err := c.GetInt("offset", 0)
+	limit, err := c.GetInt("limit", 10)
 
-	offset, err := c.GetInt(":offset", 0)
-	limit, err := c.GetInt(":limit", 10)
-
+	logs.Debug("get limit:%v,offset:%v", limit, offset)
 	result := make([]VoteUserT, 0)
 	voters, err := models.ListAllVote(ecId, condidateId, limit, offset)
 	for _, user := range voters {
 
 		u := VoteUserT{
-			Username:   user.Username,
-			Email:      user.Email,
-			IdentityNo: user.IdentityNo,
+			CandidateId: condidateId,
+			Username:    user.Username,
+			Email:       user.Email,
+			IdentityNo:  user.IdentityNo,
 		}
 		result = append(result, u)
 	}

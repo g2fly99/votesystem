@@ -1,14 +1,14 @@
 package etc
 
 type redisConfT struct {
-	ipAddr   string `yaml:"addr"` // 127.0.0.1:13306
-	password string `yaml:"password"`
+	IpAddr string `yaml:"addr"` // 127.0.0.1:13306
+	Passwd string `yaml:"password"`
 }
 
 func (this redisConfT) ServerAddr() string {
-	return this.ipAddr
+	return this.IpAddr
 }
 
 func (this redisConfT) Password() string {
-	return this.password
+	return this.Passwd
 }
