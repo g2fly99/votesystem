@@ -14,7 +14,7 @@ import (
 
 const (
 	gECNeedCandidateNumberMin = 2
-	gECdetectFrequency        = 1 // minute
+	gECdetectFrequency        = 2 // minute
 )
 
 var (
@@ -294,8 +294,14 @@ func detectEcIsFinishedRoutine() {
 		for i := 0; ; i++ {
 			ecs, err := models.ListActiveEcs(100, 100*i)
 			if err != nil {
-				logs.Error("get all candidate failed:%v", err)
+				if errors.As(err, utils.ErrEmpty) {
+
+				} else {
+					logs.Error("get all candidate failed:%v", err)
+				}
+
 				time.Sleep(1 * time.Minute)
+				continue
 			}
 
 			now := time.Now()

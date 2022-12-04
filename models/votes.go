@@ -229,7 +229,7 @@ func ListActiveEcs(size, offset int) ([]*ElectionCampaignT, error) {
 		logs.Error("query from db failed:%v", err)
 		return nil, errors.New("dberr")
 	} else if count == 0 {
-		return nil, utils.ErrDbErr
+		return nil, utils.ErrEmpty
 	}
 
 	return result, nil
