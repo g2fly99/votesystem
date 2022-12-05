@@ -37,7 +37,7 @@ data   | object |  可选  | 具体接口携带返回
 
 - 创建一个选举活动
 - 请求方式:POST
-- URL:/v1/electioncampaign
+- URL:/v1/electioncampaign?expire=202212042008&description=justfortest
 
 - 入参
 
@@ -344,12 +344,17 @@ voteNumber  | int     | 必选 | 获得投票数
 ```
 
 #### 投票:查询选票
-- 查询候选人选票
+- 查询候选人选票，默认每页显示10票
 - 请求方式:GET
-- URL:/v1/electioncampaign/{ecId}/condidate/{condidateId}/votes
+- URL:/v1/electioncampaign/{ecId}/condidate/{condidateId}/votes?offset=1
+
+- 入参
+
+参数名  | 类型   | 约束  | 提交方式 |描述
+-------|--------|------|---------|-----------
+offset | string | 可选  |query   | 翻页,第几页
 
 - 返回值
-
 
 - 投票人信息
 
