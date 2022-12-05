@@ -10,8 +10,7 @@ import (
 )
 
 type CandidateT struct {
-	CandidateId int `json:"candidateId"`
-	EcId        string
+	CandidateId int    `json:"candidateId"`
 	Name        string `json:"name"`
 	Sex         int    `json:"sex"`
 	Age         int    `json:"age"`
@@ -33,7 +32,7 @@ type VoteUserT struct {
 
 // @Title Get candidate's votes
 // @Description get all Election Campaigns
-// @Success 200 {object} VoteUserT
+// @Success 200 {object} controllers.VoteUserT
 // @router /:ecId/condidate/:condidateId/votes/ [get]
 func (c *VoteController) GetVoters() {
 

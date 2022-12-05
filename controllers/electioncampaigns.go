@@ -132,7 +132,7 @@ func getVoteDetail(ec *models.ElectionCampaignT) (VoteDetailT, error) {
 
 // @Title GetAll Election Campaign
 // @Description get all Election Campaigns
-// @Success 200 {object} models.ElectionCampaignT
+// @Success 200 []{object} models.ElectionCampaignT
 // @router / [get]
 func (v *VoteController) GetAll() {
 
@@ -215,7 +215,9 @@ func (v *VoteController) GetAll() {
 
 // @Title create election campaign
 // @Description get all Election Campaigns
-// @Success 200 {object} models.ElectionCampaignT
+// @Param    expire    query     string     true     "expire time eg:202212042008"
+// @Param    description    query     string     false     "description of the election campaign"
+// @Success 200 {object} response.ResponseT
 // @router / [post]
 func (v *VoteController) CreateNewEc() {
 

@@ -57,6 +57,7 @@ func checkEcVoteValid(ecId int) (bool, response.ResponseT) {
 
 // @Title add candidates to election campaign
 // @Description add Candidates to Election Campaigns
+// @Param    candidate    {object}     CandidateAddParamT     true
 // @Success 200 {object} response.ResponseT
 // @router /:ecId/candidate [post]
 func (v *VoteController) AddNewEcCandidate() {
@@ -218,7 +219,7 @@ func (v *VoteController) VoteToCondidate() {
 	}
 
 	//check vote candidate is valid
-	candidateToVote := &models.CandidateT{}
+	candidateToVote := &models.CandidateT{CandidateId: -1}
 	for _, candidate := range candidates {
 		if candidate.CandidateId == input.CandidateId {
 			candidateToVote = candidate
@@ -227,7 +228,7 @@ func (v *VoteController) VoteToCondidate() {
 	}
 
 	//candidate is invalid
-	if nil == candidates {
+	if candidateToVote.CandidateId == -1 {
 		logs.Debug("candidate not in Election Campaigns[%v/%v]", input.CandidateId, ecId)
 		v.Data["json"] = response.ErrVoteInvalid
 		v.ServeJSON()
