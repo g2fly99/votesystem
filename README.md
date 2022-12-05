@@ -2,11 +2,11 @@
 a simple vote system
 
 # interface
-1. look interface.md
-2. run
+look interface.md
+
 
 # how to run ？
-there are 3 way ro start the program:
+there are 3 way to start the program:
 
 ## dockerfile 1
 1. download Dockerfile
