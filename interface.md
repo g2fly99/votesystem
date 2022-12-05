@@ -75,7 +75,7 @@ description | string | query | 可选 | 选举描述
 通用返回码
 
 #### 选举:获取
-- 获取所有选举
+- 获取所有选举活动
 - 请求方式:GET
 - URL:/v1/electioncampaign
 
@@ -99,7 +99,7 @@ created | string | 必选 | 创建时间
 candidates | object array | 必选 | 选举人信息
 
 
-- 候选人信息
+- 投票人信息
 
 参数名       | 类型     | 约束  |描述
 ------------|---------|------|---------
@@ -298,13 +298,14 @@ candidates | object array | 必选 | 选举人信息
 
 - 候选人信息
 
-参数名       | 类型     | 约束  |描述
-------------|---------|------|---------
-username    | string  | 可选  | 姓名,长度255以内
-email       | string  | 必选  | 投票人email地址,用于接收投票结果信息，选举活动内唯一，长度255以内
-IdentityNo  | string  | 必选  | 可选 | 香港身份证号A123456(7)，仅做格式校验,未做有效性校验，选举活动内唯一
-CandidateId | int     | 必选  | 选举人Id
-voteNumber  | int     | 必选  | 获得投票数
+参数名      | 类型     | 约束  |  |描述
+-----------|----------|------|---------
+candidateId| int      | 必选 | 所属选举活动Id
+name       | string   | 必选 | 过期时间:202212042008,精确到秒;为方便后续测试，暂未做优化
+sex        | int      | 必选 | 性别:0,女；1，男
+age        | int      | 必选 | 年龄
+description | string  | 可选 | 选举人描述
+voteNumber  | int     | 必选 | 获得投票数
 
 - example
 ```json
@@ -339,6 +340,93 @@ voteNumber  | int     | 必选  | 获得投票数
             }
         ]
     }
+}
+```
+
+#### 投票
+- 查询候选人选票
+- 请求方式:GET
+- URL:/v1/electioncampaign/{ecId}/condidate/{condidateId}/votes
+
+- 返回值
+
+
+- 投票人信息
+
+参数名       | 类型     | 约束  |描述
+------------|---------|------|---------
+username    | string  | 可选  | 姓名,长度255以内
+email       | string  | 必选  | 投票人email地址,用于接收投票结果信息，选举活动内唯一，长度255以内
+IdentityNo  | string  | 必选  | 可选 | 香港身份证号A123456(7)，仅做格式校验,未做有效性校验，选举活动内唯一
+CandidateId | int     | 必选  | 投票的候选人Id
+
+
+```json
+{
+    "code": 200,
+    "message": "successful",
+    "data": [
+        {
+            "username": "Eric",
+            "email": "test3@qq.com",
+            "identityNo": "C123456(7)",
+            "candidateId": 1
+        },
+        {
+            "username": "Eric",
+            "email": "a_test3@1.cc",
+            "identityNo": "C124456(8)",
+            "candidateId": 1
+        },
+        {
+            "username": "BeJson",
+            "email": "test2@qq.com",
+            "identityNo": "D987654(7)",
+            "candidateId": 1
+        },
+        {
+            "username": "BeJson",
+            "email": "test@qq.com",
+            "identityNo": "A123456(7)",
+            "candidateId": 1
+        },
+        {
+            "username": "Eric",
+            "email": "test3@qq.com",
+            "identityNo": "C123456(7)",
+            "candidateId": 1
+        },
+        {
+            "username": "Eric",
+            "email": "test3@qq.com.cn",
+            "identityNo": "F123456(7)",
+            "candidateId": 1
+        },
+        {
+            "username": "Eric",
+            "email": "a_test3@qq.com",
+            "identityNo": "C123456(8)",
+            "candidateId": 1
+        },
+        {
+            "username": "Eric",
+            "email": "a_test3@1.com",
+            "identityNo": "C123456(9)",
+            "candidateId": 1
+        },
+        {
+            "username": "Eric",
+            "email": "a_test3@1.cc",
+            "identityNo": "C124456(8)",
+            "candidateId": 1
+        },
+        {
+            "username": "Eric",
+            "email": "a_test3@1.c",
+            "identityNo": "C124456(9)",
+            "candidateId": 1
+        }
+    ]
 }
 ```
 

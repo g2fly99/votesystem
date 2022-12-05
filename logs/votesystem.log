@@ -248,3 +248,13 @@
 2022/12/05 07:48:46.777  [D] [electioncampaigns.go:139]  get all election campaign:/v1/electioncampaign
 2022/12/05 07:48:46.780  [D] [electioncampaigns.go:170]  get ecs number:4
 2022/12/05 07:48:46.934  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m| 156.733093ms|   match|[97;44m GET     [0m /v1/electioncampaign   r:/v1/electioncampaign/
+2022/12/05 08:25:07.288  [D] [models.go:44]  root:Aa123456!@#@tcp(127.0.0.1:3306)/ipcc?charset=utf8&loc=Local
+2022/12/05 08:25:07.374  [I] [eccache.go:36]  redis connect success......
+2022/12/05 08:25:07.381  [W] [admin.go:91]  now we don't start tasks here, if you use task module, please invoke task.StartTask, or task will not be executed
+2022/12/05 08:25:07.381  [I] [admin.go:100]  Admin server Running on :8089
+2022/12/05 08:25:07.731  [I] [parser.go:413]  generate router from comments
+2022/12/05 08:25:07.732  [I] [server.go:241]  http server Running on http://:8080
+2022/12/05 08:25:07.732  [I] [server.go:241]  http server Running on http://:8089
+2022/12/05 08:26:12.658  [D] [candidate.go:97]  list votes:/v1/electioncampaign/1/condidate/1/votes/
+2022/12/05 08:26:12.658  [D] [candidate.go:119]  get limit:10,offset:0
+2022/12/05 08:26:12.770  [D] [router.go:955]  |      127.0.0.1|[97;42m 200 [0m| 111.665532ms|   match|[97;44m GET     [0m /v1/electioncampaign/1/condidate/1/votes/   r:/v1/electioncampaign/:ecId/condidate/:condidateId/votes/
