@@ -298,10 +298,10 @@ candidates | object array | 必选 | 选举人信息
 
 - 候选人信息
 
-参数名      | 类型     | 约束  |  |描述
+参数名      | 类型     | 约束  |  描述
 -----------|----------|------|---------
 candidateId| int      | 必选 | 所属选举活动Id
-name       | string   | 必选 | 过期时间:202212042008,精确到秒;为方便后续测试，暂未做优化
+name       | string   | 必选 | 投票人姓名
 sex        | int      | 必选 | 性别:0,女；1，男
 age        | int      | 必选 | 年龄
 description | string  | 可选 | 选举人描述
@@ -343,7 +343,7 @@ voteNumber  | int     | 必选 | 获得投票数
 }
 ```
 
-#### 投票
+#### 投票:查询选票
 - 查询候选人选票
 - 请求方式:GET
 - URL:/v1/electioncampaign/{ecId}/condidate/{condidateId}/votes
