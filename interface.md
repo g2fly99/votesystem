@@ -53,7 +53,7 @@ description | string | query | 可选 | 选举描述
 #### 选举:开始
 - 开始一个选举活动
 - 请求方式:PUT
-- URL:/v1/electioncampaign/{ecId}/finish
+- URL:/v1/electioncampaign/{ecId}/start
 
 - 入参
   无
@@ -65,7 +65,7 @@ description | string | query | 可选 | 选举描述
 #### 选举:结束
 - 结束一个选举活动
 - 请求方式:PUT
-- URL:/v1/electioncampaign/{ecId}/start
+- URL:/v1/electioncampaign/{ecId}/finish
 
 - 入参
   无
