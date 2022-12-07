@@ -28,7 +28,7 @@ a simple vote system
 1. 为了避免垃圾邮件，以及测试错误邮箱的配置，仅做了打印日志的处理。
 
 # interface
-look interface.md
+see interface.md
 
 
 # how to run ？
