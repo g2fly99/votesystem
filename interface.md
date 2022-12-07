@@ -221,10 +221,10 @@ candidate | object array | 必选 | body | 选举人信息
 
 参数名  | 类型 | 约束  | 提交方式 |描述
 -------|------|------|---------|-----------
-name | string | 必选 |body | 过期时间:202212042008,精确到秒;为方便后续测试，暂未做优化
+name | string | 必选 |body | 候选人姓名
 sex | int | body | 必选 | 性别:0,女；1，男
 age | int | body | 必选 | 可选 | 年龄
-description | string | body | 可选 | 选举人描述
+description | string | body | 可选 | 候选人介绍
 
 - example
 ```json
@@ -269,8 +269,8 @@ description | string | body | 可选 | 选举人描述
 -------|------|------|---------|-----------
 username | string | 可选 |body | 姓名,255以内
 email | string | body | 必选 | 投票人email地址,用于接收投票结果信息
-IdentityNo | string | body | 必选 | 可选 | 香港身份证号，仅做格式校验,未做有效性校验
-CandidateId | int | body | 必选 | 选举人Id
+IdentityNo | string | body | 必选 | 香港身份证号，仅做格式校验,未做有效性校验
+CandidateId | int | body | 必选 | 候选人Id
 
 - example
 ```json
@@ -362,7 +362,7 @@ offset | string | 可选  |query   | 翻页,第几页
 ------------|---------|------|---------
 username    | string  | 可选  | 姓名,长度255以内
 email       | string  | 必选  | 投票人email地址,用于接收投票结果信息，选举活动内唯一，长度255以内
-IdentityNo  | string  | 必选  | 可选 | 香港身份证号A123456(7)，仅做格式校验,未做有效性校验，选举活动内唯一
+IdentityNo  | string  | 必选  | 香港身份证号A123456(7)，仅做格式校验,未做有效性校验，选举活动内唯一
 CandidateId | int     | 必选  | 投票的候选人Id
 
 
