@@ -362,8 +362,8 @@ offset | string | 可选  |query   | 翻页,第几页
 ------------|---------|------|---------
 username    | string  | 可选  | 姓名,长度255以内
 email       | string  | 必选  | 投票人email地址,用于接收投票结果信息，选举活动内唯一，长度255以内
-IdentityNo  | string  | 必选  | 香港身份证号A123456(7)，仅做格式校验,未做有效性校验，选举活动内唯一
-CandidateId | int     | 必选  | 投票的候选人Id
+identityNo  | string  | 必选  | 香港身份证号A123456(7)，仅做格式校验,未做有效性校验，选举活动内唯一
+candidateId | int     | 必选  | 投票的候选人Id
 
 
 ```json
