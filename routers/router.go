@@ -20,11 +20,6 @@ func init() {
 				&controllers.VoteController{},
 			),
 		),
-		beego.NSNamespace("/condidate",
-			beego.NSInclude(
-				&controllers.CondidateController{},
-			),
-		),
 	)
 	beego.AddNamespace(ns)
 }

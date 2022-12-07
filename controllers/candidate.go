@@ -7,7 +7,6 @@ import (
 	"votesystem/response"
 
 	"github.com/beego/beego/v2/core/logs"
-	beego "github.com/beego/beego/v2/server/web"
 )
 
 type CandidateT struct {
@@ -17,11 +16,6 @@ type CandidateT struct {
 	Age         int    `json:"age"`
 	Description string `json:"description"`
 	VoteNumber  int    `json:"voteNumber"`
-}
-
-// Operations about CondidateController
-type CondidateController struct {
-	beego.Controller
 }
 
 type VoteUserT struct {
