@@ -5,6 +5,7 @@ import (
 	"votesystem/cache"
 	"votesystem/etc"
 	"votesystem/models"
+	"votesystem/proxy"
 	_ "votesystem/routers"
 
 	"github.com/beego/beego/v2/core/logs"
@@ -45,5 +46,6 @@ func main() {
 
 	cache.Init(etc.RedisAddr(), etc.RedisPasswd())
 
+	proxy.RunProxyTask()
 	beego.Run()
 }

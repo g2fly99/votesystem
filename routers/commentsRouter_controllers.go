@@ -7,6 +7,15 @@ import (
 
 func init() {
 
+    beego.GlobalControllerRouter["votesystem/controllers:TaskController"] = append(beego.GlobalControllerRouter["votesystem/controllers:TaskController"],
+        beego.ControllerComments{
+            Method: "CreateNewTask",
+            Router: "/",
+            AllowHTTPMethods: []string{"post"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
     beego.GlobalControllerRouter["votesystem/controllers:VoteController"] = append(beego.GlobalControllerRouter["votesystem/controllers:VoteController"],
         beego.ControllerComments{
             Method: "GetAll",
